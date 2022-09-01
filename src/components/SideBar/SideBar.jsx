@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import s from './SideBar.module.css';
 
 const SideBar = () => {
-  const categories = ['Products1', 'Products2', 'Products3'];
+  const categories = ['products', 'products2', 'products3'];
   return (
     <nav className={s.nav}>
       {categories.map(category => (
