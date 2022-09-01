@@ -1,0 +1,16 @@
+.header {
+  position: relative;
+  height: 50px;
+  padding: 30px;
+  background-color: #0b07f8;
+  color: #ffff00;
+  font-size: 30px;
+  text-align: center;
+}
+
+.link {
+  position: absolute;
+  right: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
