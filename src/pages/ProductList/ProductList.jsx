@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux/es/exports';
 import { getProducts } from 'redux/operations';
+import { ProductCard } from 'components';
 import s from '../index.module.css';
-import { ProductCard } from 'pages';
 
 const ProductList = () => {
   const products = useSelector(state => state.products);

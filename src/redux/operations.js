@@ -10,7 +10,7 @@ export const getProducts = createAsyncThunk(
       const { data } = await axios.get(`/${category}`);
       return data;
     } catch (error) {
-      rejectWithValue(error);
+      return rejectWithValue(error);
     }
   }
 );
@@ -22,7 +22,7 @@ export const getProducts = createAsyncThunk(
 //       const { data } = await axios.post('/contacts', contact);
 //       return data;
 //     } catch (error) {
-//       rejectWithValue(error);
+//       return rejectWithValue(error);
 //     }
 //   }
 // );
@@ -36,7 +36,7 @@ export const getProducts = createAsyncThunk(
 //       } = await axios.delete(`/contacts/${contactId}`);
 //       return id;
 //     } catch (error) {
-//       rejectWithValue(error);
+//       return rejectWithValue(error);
 //     }
 //   }
 // );

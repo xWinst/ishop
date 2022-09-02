@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import {
   TrendList,
   ProductList,
-  ProductCard,
+  ProductInfo,
   Basket,
   PageNotFound,
 } from 'pages';
@@ -22,7 +22,7 @@ export const App = () => {
             <Route path="/" element={<TrendList />} />
             <Route path="basket" element={<Basket />} />
             <Route path="products/:category" element={<ProductList />} />
-            <Route path="products/:productId/*" element={<ProductCard />} />
+            <Route path="product/:productId" element={<ProductInfo />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Suspense>

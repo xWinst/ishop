@@ -1,0 +1,29 @@
+.card {
+  width: 200px;
+  height: 350px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  border-radius: 8px;
+
+  /* background-color: #020202; */
+  box-shadow: 2px 2px 3px #00ffff;
+  cursor: pointer;
+}
+
+.card:hover {
+  scale: 1.05;
+  transition: scale 300ms ease;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+.price {
+  font-weight: 600;
+  color: #d1ff02;
+}
